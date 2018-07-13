@@ -993,7 +993,7 @@ The following example uses the plot method to download the data set and plot it 
 plot(iris_ct$Sepal.Length, iris_ct$Sepal.Width)
 ```
 
-![](https://cdn-images-1.medium.com/max/1000/1*W0qSMsheaWsXJBJ7i2pH4g.png)
+![](https://github.com/qi-yue/sas-viya-the-R-perspective/blob/master/figures/2_1.png?raw=true)
 
 Closing the Connection
 ----------------------
