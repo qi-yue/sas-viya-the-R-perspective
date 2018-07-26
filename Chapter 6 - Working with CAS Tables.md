@@ -445,7 +445,7 @@ plot(tbl$Sepal.Length, tbl$Sepal.Width, pch = 16, type = 'p',
   col = 'blue', main = "Plot on a CASTable")
 ```
 
-![](Chapter_6_-_Working_with_CAS_Tables_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/6_1.png)
 
 ``` r
 par(mfrow=c(1,3))
@@ -463,7 +463,7 @@ plot(tbl_tmp$Sepal.Length, tbl_tmp$Sepal.Width, pch = 18, type = 'p',
     col = 'blue', main = "virginica")
 ```
 
-![](Chapter_6_-_Working_with_CAS_Tables_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/6_2.png)
 
 Sorting, Data Selection, and Iteration
 ======================================
