@@ -162,7 +162,7 @@ t(df1)
 barplot(df$Mean, names.arg = df$Column, col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_1.png)
 
 ``` r
 organics@groupby <- 'DemGender'
@@ -383,7 +383,7 @@ barplot(df$Percent, names.arg = df$MidPoint, cex.names = 0.5,
   xlab='Purchase_3mon', ylab='Percent', col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_2.png)
 
 ``` r
 result <- cas.dataPreprocess.histogram(
@@ -396,7 +396,7 @@ barplot(df$Percent, names.arg = df$MidPoint, cex.names = 0.5,
         xlab='Purchase_3mon', ylab='Percent', col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-22-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_3.png)
 
 ``` r
 result <- cas.dataPreprocess.histogram(
@@ -409,7 +409,7 @@ barplot(df$Percent, names.arg = df$MidPoint, cex.names = 0.5,
         xlab='Purchase_3mon', ylab='Percent', col = '#1f77b4') 
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-23-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_4.png)
 
 ``` r
 result <- cas.dataPreprocess.histogram(
@@ -422,7 +422,7 @@ barplot(df$Percent, names.arg = df$MidPoint, cex.names = 0.5,
         xlab='Purchase_3mon', ylab='Percent', col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-24-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_5.png)
 
 ``` r
 organics@groupby <- c('DemGender', 'DemAgeGroup')
@@ -475,7 +475,7 @@ for (this_title in names(all_df)){
   }
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-27-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_6.png)
 
 Percentiles
 -----------
@@ -560,7 +560,9 @@ ggplot(result2, aes(Pctl, Value, shape = factor(DemGender))) +
   geom_point(aes(colour = factor(DemGender)))
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-32-1.png) \#\# Correlations
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_7.png) 
+
+\#\# Correlations
 
 ``` r
 cas.simple.correlation(organics)
@@ -936,7 +938,7 @@ barplot(df$Frequency, names.arg = df$FmtVar,
         xlab='TargetBuy', ylab='Frequency', col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-42-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_8.png)
 
 ``` r
 cas.simple.freq(organics['TargetBuy','DemAgeGroup','DemHomeowner'])
@@ -956,7 +958,7 @@ barplot(df$Frequency, names.arg = df$NumVar,
         xlab='Age', ylab='Frequency', col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-44-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_9.png)
 
 ``` r
 out <- cas.simple.freq(organics['DemAge'], includemissing = TRUE)
@@ -965,7 +967,7 @@ barplot(df$Frequency, names.arg = df$NumVar,
         xlab='Age', ylab='Frequency', col = '#1f77b4')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-45-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_10.png)
 
 Top K
 -----
@@ -1180,7 +1182,7 @@ ggplot(df_melt, aes(DemGender, Frequency, fill = DemAgeGroup)) +
   scale_fill_brewer(palette = 'Set1')
 ```
 
-![](Chapter_7_-_Data_Exploration_and_Summary_Statistics_files/figure-markdown_github/unnamed-chunk-56-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/7_11.png)
 
 ``` r
 organics <- defCasTable(conn,'organics')
