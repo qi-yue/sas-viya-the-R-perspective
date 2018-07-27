@@ -250,7 +250,7 @@ ggplot(out1, aes(Predicted_MSRP, Residual_MSRP,
 geom_point()
 ```
 
-![](Chapter_8_-_Modeling_Continuous_Variables_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/8_1.png)
 
 ``` r
 result2[result2$Predicted_MSRP<0,   
@@ -272,7 +272,8 @@ ggplot(out1, aes(MPG_City, MSRP,
   geom_point()
 ```
 
-![](Chapter_8_-_Modeling_Continuous_Variables_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/8_2.png)
+
 
 ``` r
 cars@where <- 'MSRP < 100000 and MPG_City < 40'
@@ -306,7 +307,7 @@ ggplot(out2, aes(Predicted_MSRP, Residual_MSRP,
   geom_point()
 ```
 
-![](Chapter_8_-_Modeling_Continuous_Variables_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/8_3.png)
 
 ``` r
 nomList <- c('Origin','Type','DriveTrain')
@@ -368,7 +369,9 @@ ggplot(out, aes(Predicted_MSRP, Residual_MSRP,
   geom_point()
 ```
 
-![](Chapter_8_-_Modeling_Continuous_Variables_files/figure-markdown_github/unnamed-chunk-18-1.png) \# Extensions of Ordinary Linear Regression \#\# Generalized Linear Models
+![](https://raw.githubusercontent.com/qi-yue/sas-viya-the-R-perspective/master/figures/8_4.png) 
+
+\# Extensions of Ordinary Linear Regression \#\# Generalized Linear Models
 
 ``` r
 cars@groupby <- list()
